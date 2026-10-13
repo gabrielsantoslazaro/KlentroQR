@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#F5F5F7]/95 border-b border-[#E5E5E7]/80 transition-all">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-1.5 sm:gap-2 group">
@@ -30,10 +30,10 @@ export default function Navbar() {
               alt="KlentroQR Logo"
               width={56}
               height={56}
-              className="w-12 h-12 sm:w-14 sm:h-14 object-contain group-hover:scale-105 transition-transform shrink-0"
+              className="w-10 h-10 sm:w-14 sm:h-14 object-contain group-hover:scale-105 transition-transform shrink-0"
               priority
             />
-            <span className="font-extrabold text-2xl sm:text-[26px] tracking-tight text-[#1D1D1F]">
+            <span className="font-extrabold text-xl sm:text-[26px] tracking-tight text-[#1D1D1F]">
               Klentro<span className="text-[#007AFF]">QR</span>
             </span>
           </Link>
@@ -73,10 +73,10 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-[#1D1D1F] hover:bg-[#E5E5E7] transition-colors cursor-pointer"
+              className="w-10 h-10 rounded-2xl bg-[#E5E5E7]/70 flex items-center justify-center text-[#1D1D1F] hover:bg-[#E5E5E7] transition-colors cursor-pointer"
               aria-label="Toggle navigation menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
