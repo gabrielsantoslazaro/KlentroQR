@@ -42,7 +42,7 @@ const DETAILED_STEPS = [
     imageAspect: "aspect-[4/3]",
     maxImageW: "max-w-[420px]",
     highlights: [
-      "Instant sound chime and green confirmation banner on scan",
+      "Instant sound chime and blue confirmation banner on scan",
       "Accurate arrival timestamp tagged immediately to live record",
       "Works 100% offline in remote venues, basements, and Wi-Fi dead zones",
     ],
@@ -163,7 +163,7 @@ export default function HowItWorksPage() {
                       <div className="space-y-3 pt-2">
                         {step.highlights.map((highlight, hIdx) => (
                           <div key={hIdx} className="flex items-start gap-3">
-                            <div className="w-5 h-5 rounded-full bg-[#ECFDF5] text-[#10B981] flex items-center justify-center shrink-0 mt-0.5">
+                            <div className="w-5 h-5 rounded-full bg-[#EFF6FF] text-[#007AFF] flex items-center justify-center shrink-0 mt-0.5">
                               <CheckCircle2 className="w-3.5 h-3.5" />
                             </div>
                             <span className="text-sm sm:text-base text-[#1D1D1F] font-medium leading-relaxed">

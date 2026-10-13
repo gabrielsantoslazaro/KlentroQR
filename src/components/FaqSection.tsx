@@ -69,7 +69,7 @@ export default function FaqSection() {
 
         {/* Privacy Highlight Banner */}
         <div className="mb-10 p-5 rounded-2xl bg-white border border-[#E5E5E7] flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-xs">
-          <div className="w-10 h-10 rounded-xl bg-[#ECFDF5] text-[#10B981] flex items-center justify-center shrink-0">
+          <div className="w-10 h-10 rounded-xl bg-[#EFF6FF] text-[#007AFF] border border-[#BFDBFE] flex items-center justify-center shrink-0">
             <ShieldCheck className="w-5 h-5" />
           </div>
           <div className="space-y-0.5">

@@ -109,8 +109,8 @@ export default function ComparisonSection() {
                 <div className="space-y-3.5 sm:space-y-4 pt-2">
                   {COMPARISONS.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-[#ECFDF5] text-[#10B981] flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
-                        <Check className="w-3.5 h-3.5" />
+                      <div className="w-5 h-5 rounded-full bg-[#EFF6FF] text-[#007AFF] flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                        <Check className="w-3.5 h-3.5 stroke-[3]" />
                       </div>
                       <p className="text-xs sm:text-sm md:text-[13px] lg:text-sm text-[#1D1D1F] font-medium leading-relaxed">
                         {item.klentro}

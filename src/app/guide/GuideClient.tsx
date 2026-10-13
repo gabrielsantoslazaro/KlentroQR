@@ -88,7 +88,7 @@ export default function GuideClient() {
       instruction: "Open the Klentro scanner on any smartphone, tablet, or mounted laptop webcam.",
       details: [
         "Point your camera at the pass from 6 to 12 inches away—detection occurs in under 200 milliseconds.",
-        "Instant audio chime and emerald screen flash confirm a valid check-in.",
+        "Instant audio chime and blue screen flash confirm a valid check-in.",
         "Exact time-in timestamps and arrival status (On-Time or Late) are automatically recorded.",
       ],
       tip: "No Wi-Fi? Klentro works completely offline, storing verified check-ins locally until internet resumes.",
@@ -300,7 +300,7 @@ export default function GuideClient() {
                   <div className="space-y-2.5 pl-1">
                     {item.details.map((detail, dIdx) => (
                       <div key={dIdx} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-4 h-4 text-[#10B981] shrink-0 mt-1" />
+                        <CheckCircle2 className="w-4 h-4 text-[#007AFF] shrink-0 mt-1" />
                         <span className="text-xs sm:text-sm text-[#4B5563] leading-relaxed">
                           {detail}
                         </span>
@@ -320,7 +320,7 @@ export default function GuideClient() {
                           onClick={copyCsvTemplate}
                           className="inline-flex items-center gap-1 text-xs text-white hover:text-[#007AFF] transition-colors cursor-pointer"
                         >
-                          {copiedCsv ? <Check className="w-3.5 h-3.5 text-[#10B981]" /> : <Copy className="w-3.5 h-3.5" />}
+                          {copiedCsv ? <Check className="w-3.5 h-3.5 text-[#007AFF]" /> : <Copy className="w-3.5 h-3.5" />}
                           <span>{copiedCsv ? "Copied!" : "Copy CSV Header"}</span>
                         </button>
                       </div>

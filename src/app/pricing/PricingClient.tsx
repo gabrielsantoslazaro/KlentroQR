@@ -264,7 +264,7 @@ export default function PricingClient() {
                       </span>
                       {plan.features.map((feature, fIdx) => (
                         <div key={fIdx} className="flex items-start gap-2">
-                          <div className="w-4 h-4 rounded-full bg-[#ECFDF5] text-[#10B981] flex items-center justify-center shrink-0 mt-0.5">
+                          <div className="w-4 h-4 rounded-full bg-[#EFF6FF] text-[#007AFF] flex items-center justify-center shrink-0 mt-0.5">
                             <Check className="w-3 h-3 stroke-[3]" />
                           </div>
                           <span className="text-xs sm:text-sm md:text-[12px] lg:text-sm text-[#4B5563] leading-relaxed">
@@ -332,7 +332,7 @@ export default function PricingClient() {
                           <td className="py-3.5 px-4 text-center text-xs sm:text-sm text-[#4B5563]">
                             {typeof row.starter === "boolean" ? (
                               row.starter ? (
-                                <Check className="w-4 h-4 text-[#10B981] mx-auto stroke-[3]" />
+                                <Check className="w-4 h-4 text-[#007AFF] mx-auto stroke-[3]" />
                               ) : (
                                 <X className="w-4 h-4 text-[#D1D1D6] mx-auto" />
                               )
@@ -354,7 +354,7 @@ export default function PricingClient() {
                           <td className="py-3.5 px-4 text-center text-xs sm:text-sm text-[#4B5563]">
                             {typeof row.enterprise === "boolean" ? (
                               row.enterprise ? (
-                                <Check className="w-4 h-4 text-[#10B981] mx-auto stroke-[3]" />
+                                <Check className="w-4 h-4 text-[#007AFF] mx-auto stroke-[3]" />
                               ) : (
                                 <X className="w-4 h-4 text-[#D1D1D6] mx-auto" />
                               )

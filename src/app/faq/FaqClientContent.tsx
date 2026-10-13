@@ -59,7 +59,7 @@ export default function FaqClientContent() {
       {/* Privacy Highlight Banner */}
       <ScrollReveal delay={0}>
         <div className="mb-10 p-6 rounded-3xl bg-white border border-[#E5E5E7] flex flex-col sm:flex-row items-start sm:items-center gap-5 shadow-xs">
-          <div className="w-12 h-12 rounded-2xl bg-[#ECFDF5] text-[#10B981] flex items-center justify-center shrink-0">
+          <div className="w-12 h-12 rounded-2xl bg-[#EFF6FF] text-[#007AFF] border border-[#BFDBFE] flex items-center justify-center shrink-0">
             <ShieldCheck className="w-6 h-6" />
           </div>
           <div className="space-y-1">

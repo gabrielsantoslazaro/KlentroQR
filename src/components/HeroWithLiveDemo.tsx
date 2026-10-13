@@ -87,7 +87,7 @@ export default function HeroSection() {
 
             {/* Clean Note */}
             <div className="pt-2 flex items-center justify-center lg:justify-start gap-2 text-xs sm:text-sm text-[#1D1D1F]">
-              <span className="w-2 h-2 rounded-full bg-[#10B981] inline-block" />
+              <span className="w-2 h-2 rounded-full bg-[#007AFF] inline-block" />
               <span className="text-[#007AFF] font-bold">100% Paperless</span>
               <span className="text-[#6E6E73]">for classrooms, offices & events.</span>
             </div>

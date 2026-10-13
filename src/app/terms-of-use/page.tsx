@@ -150,7 +150,7 @@ export default function TermsOfUsePage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                 <div className="p-4 rounded-2xl bg-[#F9F9FB] border border-[#E5E5E7] space-y-1.5">
                   <div className="flex items-center gap-2 text-xs font-bold text-[#1D1D1F]">
-                    <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#007AFF]" />
                     <span>Your Data Belongs to You</span>
                   </div>
                   <p className="text-xs text-[#6E6E73] leading-relaxed">

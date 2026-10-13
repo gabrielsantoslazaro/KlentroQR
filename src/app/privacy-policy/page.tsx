@@ -131,8 +131,8 @@ export default function PrivacyPolicyPage() {
 
               <div className="space-y-3 pt-1">
                 <div className="p-4 rounded-2xl bg-[#F9F9FB] border border-[#E5E5E7] space-y-2">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#10B981] flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#007AFF] flex items-center gap-1.5">
+                    <CheckCircle2 className="w-4 h-4 text-[#007AFF]" />
                     What We Store for Attendance
                   </span>
                   <ul className="text-xs sm:text-sm text-[#4B5563] space-y-1.5 pl-6 list-disc">
