@@ -8,8 +8,8 @@ const TESTIMONIALS = [
     name: "Engr. Rafael Mendoza",
     title: "University Instructor & Department Chair",
     initials: "RM",
-    bgColor: "bg-[#BFDBFE]",
-    textColor: "text-[#1E40AF]",
+    bgColor: "bg-[#EFF6FF]",
+    textColor: "text-[#007AFF]",
     quote: "The 10 to 15 minutes we used to lose calling student names every morning is completely recovered for lecture time. Generating the semestral attendance summary directly to Excel makes grade submission painless.",
   },
   {
@@ -17,8 +17,8 @@ const TESTIMONIALS = [
     name: "Patricia Gomez",
     title: "HR & Office Operations Lead",
     initials: "PG",
-    bgColor: "bg-[#BBF7D0]",
-    textColor: "text-[#166534]",
+    bgColor: "bg-[#EFF6FF]",
+    textColor: "text-[#007AFF]",
     quote: "We replaced our slow biometric fingerprint scanner with Klentro QR badges. Employees scan in with their phones within one second, completely eliminating line congestion during morning shift arrivals.",
   },
   {

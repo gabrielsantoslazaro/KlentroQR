@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Klentro — Universal QR Attendance System",
+  title: "KlentroQR",
   description:
     "A modern, contactless QR attendance platform for schools, workplaces, and events. Sub-second scanning, live rosters, and 1-click CSV export.",
   icons: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Klentro Development Team" }],
   openGraph: {
-    title: "Klentro — Universal QR Attendance System",
+    title: "KlentroQR",
     description:
       "Frictionless attendance tracking powered by QR technology. Real-time verification, offline reliability, and 1-click CSV export for teams, classrooms, and events.",
     type: "website",

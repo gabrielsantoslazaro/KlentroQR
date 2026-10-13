@@ -8,31 +8,31 @@ const CARDS = [
     id: 1,
     title: "Scan in Seconds",
     desc: "Sub-second camera detection for classrooms, offices & events",
-    image: "/images/KlentroQR-card1.jpg",
+    image: "/images/KlentroQR-blue-card1.jpg",
   },
   {
     id: 2,
     title: "Real-time Tracking",
     desc: "Live present tallies, late alerts, and room capacity",
-    image: "/images/KlentroQR-card2.jpg",
+    image: "/images/KlentroQR-blue-card2.jpg",
   },
   {
     id: 3,
     title: "Cryptographic Passes",
     desc: "Tamper-proof badges that prevent proxy signing & screenshot sharing",
-    image: "/images/KlentroQR-card3.jpg",
+    image: "/images/KlentroQR-blue-card3.jpg",
   },
   {
     id: 4,
     title: "1-Click Reports",
     desc: "Instant pre-formatted Excel and CSV attendance ledgers",
-    image: "/images/KlentroQR-card4.jpg",
+    image: "/images/KlentroQR-blue-card4.jpg",
   },
   {
     id: 5,
     title: "100% Offline Mode",
     desc: "Zero Wi-Fi required. Scans cache locally and sync automatically",
-    image: "/images/KlentroQR-card5.jpg",
+    image: "/images/KlentroQR-blue-card5.jpg",
   },
 ];
 
