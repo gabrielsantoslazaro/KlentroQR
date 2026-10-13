@@ -23,8 +23,8 @@ export default function HeroSection() {
           <div className="order-1 lg:order-2 flex items-center justify-center relative pt-2 sm:pt-4 lg:pt-0">
             <div className="relative w-full max-w-[280px] sm:max-w-[360px] lg:max-w-[530px] flex items-center justify-center">
               
-              {/* Phone Mockup with smooth gentle straightening & zoom-in */}
-              <div className="relative w-full h-[380px] sm:h-[460px] lg:h-[690px] flex items-center justify-center cursor-default transition-all duration-500 ease-out hover:-rotate-[6.7deg] hover:scale-[1.06] group z-10">
+              {/* Phone Mockup with smooth gentle straightening & zoom-in, with bottom fade on mobile */}
+              <div className="relative w-full h-[380px] sm:h-[460px] lg:h-[690px] flex items-center justify-center cursor-default transition-all duration-500 ease-out hover:-rotate-[6.7deg] hover:scale-[1.06] group z-10 max-lg:[mask-image:linear-gradient(to_bottom,black_62%,transparent_98%)] max-lg:[-webkit-mask-image:linear-gradient(to_bottom,black_62%,transparent_98%)]">
                 <Image
                   src="/KlentroQR-preview.png"
                   alt="Klentro QR Mobile Attendance Check-In Screen"
@@ -35,6 +35,12 @@ export default function HeroSection() {
                   sizes="(max-width: 768px) 100vw, 530px"
                 />
               </div>
+
+              {/* Seamless bottom fade gradient overlay matching Tarsi */}
+              <div 
+                aria-hidden="true"
+                className="absolute inset-x-0 bottom-0 h-28 sm:h-36 bg-gradient-to-t from-[#F5F5F7] via-[#F5F5F7]/70 to-transparent pointer-events-none z-20 lg:hidden" 
+              />
 
             </div>
           </div>
