@@ -26,7 +26,7 @@ export default function HeroSection() {
               {/* Phone Mockup with smooth gentle straightening & zoom-in, with bottom fade on mobile/tablet */}
               <div className="relative w-full h-[380px] sm:h-[430px] md:h-[480px] lg:h-[560px] xl:h-[660px] 2xl:h-[700px] flex items-center justify-center cursor-default transition-all duration-500 ease-out hover:-rotate-[6.7deg] hover:scale-[1.06] group z-10 max-lg:[mask-image:linear-gradient(to_bottom,black_62%,transparent_98%)] max-lg:[-webkit-mask-image:linear-gradient(to_bottom,black_62%,transparent_98%)]">
                 <Image
-                  src="/KlentroQR-preview.png"
+                  src="/images/KlentroQR-preview.png"
                   alt="Klentro QR Mobile Attendance Check-In Screen"
                   fill
                   unoptimized
@@ -70,7 +70,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-1">
               <Link
                 href="/features"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 text-base font-semibold text-white bg-[#1D1D1F] hover:bg-black active:scale-98 rounded-full shadow-md hover:shadow-lg transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 text-base font-semibold text-white bg-[#007AFF] hover:bg-[#0066CC] active:scale-98 rounded-full shadow-md hover:shadow-lg transition-all"
               >
                 <span>Explore Features</span>
                 <ArrowRight className="w-4 h-4" />

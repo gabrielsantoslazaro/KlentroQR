@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "How It Works | Klentro QR Attendance System",
+  title: "How It Works | KlentroQR",
   description:
     "See how Klentro simplifies attendance in 3 simple steps: generate verified QR passes, scan via mobile camera, and export Excel rosters.",
 };
@@ -24,7 +24,7 @@ const DETAILED_STEPS = [
     kicker: "STEP 1: PASS GENERATION",
     title: "Generate Unique QR Attendance Passes",
     subtitle: "Every participant, employee, or student receives a tamper-resistant digital pass tied to their verified ID and organization roster.",
-    image: "/KlentroQR-preview.png",
+    image: "/images/KlentroQR-preview.png",
     imageAspect: "aspect-[1040/1600]",
     maxImageW: "max-w-[320px]",
     highlights: [
@@ -38,7 +38,7 @@ const DETAILED_STEPS = [
     kicker: "STEP 2: RAPID SCANNING",
     title: "Sub-Second Mobile Camera Scan",
     subtitle: "Check-in coordinators, managers, or faculty point their phone camera at the attendee's pass. Scans decode in under 200 milliseconds.",
-    image: "/KlentroQR-checking.png",
+    image: "/images/KlentroQR-checking.png",
     imageAspect: "aspect-[4/3]",
     maxImageW: "max-w-[420px]",
     highlights: [
@@ -52,7 +52,7 @@ const DETAILED_STEPS = [
     kicker: "STEP 3: REAL-TIME ROSTERS & EXPORTS",
     title: "Live Dashboard & One-Click CSV Export",
     subtitle: "Attendance updates live. Coordinators can view present, late, and capacity tallies before exporting directly to Excel.",
-    image: "/KlentroQR-data.jpg",
+    image: "/images/KlentroQR-data.jpg",
     imageAspect: "aspect-[4/3]",
     maxImageW: "max-w-[420px]",
     highlights: [
@@ -193,7 +193,7 @@ export default function HowItWorksPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <Link
                 href="/features"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-white bg-[#1D1D1F] hover:bg-black rounded-full shadow-md hover:shadow-lg transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-white bg-[#007AFF] hover:bg-[#0066CC] active:scale-98 rounded-full shadow-md hover:shadow-lg transition-all"
               >
                 <span>Explore Features</span>
                 <ArrowRight className="w-4 h-4" />

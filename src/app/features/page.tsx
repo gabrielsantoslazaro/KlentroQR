@@ -18,7 +18,7 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Features | Klentro QR Attendance System",
+  title: "Features | KlentroQR",
   description:
     "Explore Klentro's complete mobile attendance features: instant student QR code scanning, live section rosters, automated Excel exports, and offline reliability.",
 };
@@ -358,7 +358,7 @@ export default function FeaturesPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-2">
               <Link
                 href="/how-it-works"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-white bg-[#1D1D1F] hover:bg-black rounded-full shadow-md hover:shadow-lg transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-white bg-[#007AFF] hover:bg-[#0066CC] active:scale-98 rounded-full shadow-md hover:shadow-lg transition-all"
               >
                 <span>Review 3-Step Workflow</span>
                 <ArrowRight className="w-4 h-4" />

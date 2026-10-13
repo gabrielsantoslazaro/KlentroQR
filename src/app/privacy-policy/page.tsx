@@ -20,7 +20,7 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy & RA 10173 Compliance | Klentro QR Attendance System",
+  title: "Privacy Policy | KlentroQR",
   description:
     "Klentro Privacy Policy in full compliance with the Philippine Data Privacy Act of 2012 (RA 10173). Learn how attendee records are encrypted, processed offline, and how to exercise your rights to data erasure.",
 };

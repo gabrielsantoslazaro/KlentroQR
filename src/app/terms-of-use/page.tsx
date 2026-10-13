@@ -20,7 +20,7 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | Klentro Universal QR Attendance System",
+  title: "Terms of Use | KlentroQR",
   description:
     "Official Terms of Use for Klentro QR Attendance System. Outlining acceptable use, anti-proxy verification standards, roster ownership, and legal compliance under Philippine law.",
 };

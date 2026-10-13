@@ -5,7 +5,7 @@ import FaqClientContent from "./FaqClientContent";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "FAQ & Privacy | Klentro QR Attendance System",
+  title: "FAQ | KlentroQR",
   description:
     "Find answers to frequently asked questions about the Klentro QR Attendance System: data privacy compliance (RA 10173), offline camera scanning, hardware requirements, and CSV reports.",
 };

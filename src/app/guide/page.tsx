@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import GuideClient from "./GuideClient";
 
 export const metadata: Metadata = {
-  title: "User Guide | How to Use Klentro QR Attendance System",
+  title: "User Guide | KlentroQR",
   description:
     "Step-by-step user guide for Klentro QR Attendance System. Learn how to create rosters, generate student QR passes, scan passes with your mobile camera, and export attendance to Excel.",
 };

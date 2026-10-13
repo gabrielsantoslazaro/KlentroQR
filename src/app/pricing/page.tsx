@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import PricingClient from "./PricingClient";
 
 export const metadata: Metadata = {
-  title: "Pricing & Plans | Klentro Universal QR Attendance System",
+  title: "Pricing | KlentroQR",
   description:
     "Transparent pricing plans for Klentro QR Attendance System. Free plan for individual teachers and small teams, Pro and Enterprise plans for campuses and corporate offices.",
 };

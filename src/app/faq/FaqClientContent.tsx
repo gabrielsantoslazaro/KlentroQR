@@ -148,7 +148,7 @@ export default function FaqClientContent() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
             <Link
               href="/features"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#1D1D1F] hover:bg-black rounded-full shadow-sm hover:shadow transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#007AFF] hover:bg-[#0066CC] active:scale-98 rounded-full shadow-sm hover:shadow transition-all"
             >
               <span>Explore Features</span>
               <ArrowRight className="w-4 h-4" />
