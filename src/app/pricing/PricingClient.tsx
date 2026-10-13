@@ -197,13 +197,13 @@ export default function PricingClient() {
 
       {/* Pricing Cards Grid */}
       <section className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-4.5 lg:gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-xl lg:max-w-none mx-auto items-stretch">
           {plans.map((plan) => {
             const Icon = plan.icon;
             return (
               <div
                 key={plan.id}
-                className={`rounded-3xl p-5 sm:p-6 md:p-5 lg:p-8 flex flex-col justify-between transition-all duration-300 relative ${
+                className={`rounded-3xl p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 relative ${
                   plan.highlight
                     ? "bg-white border-2 border-[#007AFF] shadow-xl shadow-[#007AFF]/10 sm:-translate-y-2"
                     : "bg-white border border-[#E5E5E7] shadow-lg shadow-black/[0.03] hover:shadow-xl"

@@ -25,10 +25,10 @@ export default function HighlightsBar() {
   return (
     <section className="pt-6 pb-12 sm:pt-8 sm:pb-16 bg-[#F5F5F7]">
       <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-4.5 lg:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-2xl lg:max-w-none mx-auto">
           {CARDS.map((card, idx) => (
             <ScrollReveal key={idx} delay={idx * 100}>
-              <div className="bg-white rounded-3xl p-5 sm:p-6 md:p-5 lg:p-7 border border-[#E5E5E7] shadow-sm flex flex-col justify-start h-full">
+              <div className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E5E5E7] shadow-sm flex flex-col justify-start h-full">
                 {/* Illustration Image Container */}
                 <div className="relative w-full h-[180px] sm:h-[200px] md:h-[150px] lg:h-[200px] xl:h-[220px] rounded-2xl overflow-hidden flex items-center justify-center mb-4 sm:mb-5 bg-[#F9F9FB]/60">
                   <Image

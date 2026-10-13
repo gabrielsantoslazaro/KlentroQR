@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { QrCode, ArrowUp, Sparkles } from "lucide-react";
+import { QrCode, ArrowUp } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 export default function ProjectCtaBanner() {
   return (
     <section className="py-16 sm:py-24 bg-[#F5F5F7]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <ScrollReveal delay={0}>
           <div className="relative rounded-3xl bg-[#1D1D1F] text-white p-8 sm:p-12 lg:p-16 overflow-hidden shadow-2xl">
             {/* Subtle glow circle */}
@@ -15,8 +15,7 @@ export default function ProjectCtaBanner() {
             />
 
             <div className="relative z-10 max-w-2xl space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-xs font-semibold backdrop-blur-md border border-white/15">
-                <Sparkles className="w-3.5 h-3.5 text-[#007AFF]" />
+              <div className="inline-flex items-center px-3.5 py-1 rounded-full bg-white/10 text-white text-xs font-semibold backdrop-blur-md border border-white/15">
                 <span>Built for Teams, Classrooms & Event Organizers</span>
               </div>
 

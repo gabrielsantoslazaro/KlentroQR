@@ -95,11 +95,9 @@ export default function Footer() {
 
         {/* Bottom Credits Divider */}
         <div className="mt-14 pt-8 border-t border-white/10 flex items-center justify-center text-xs text-[#71717A]">
-          <div className="flex items-center gap-1.5 text-center">
-            <span>© 2026 Klentro QR Attendance System.</span>
-            <span>•</span>
-            <span>All rights reserved.</span>
-          </div>
+          <p className="text-center">
+            © 2026 KlentroQR • All rights reserved.
+          </p>
         </div>
 
       </div>
