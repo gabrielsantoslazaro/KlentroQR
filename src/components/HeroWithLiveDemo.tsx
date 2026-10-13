@@ -17,10 +17,10 @@ export default function HeroSection() {
 
       {/* Perfectly balanced container - phone on top on mobile, right on desktop (Tarsi style) */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 items-center justify-center">
           
           {/* Phone Mockup Column: FIRST on mobile, SECOND on desktop */}
-          <div className="order-1 lg:order-2 flex items-center justify-center relative pt-2 sm:pt-4 lg:pt-0">
+          <div className="order-1 lg:order-2 flex items-center justify-center relative pt-6 sm:pt-9 lg:pt-0">
             <div className="relative w-full max-w-[280px] sm:max-w-[360px] lg:max-w-[530px] flex items-center justify-center">
               
               {/* Phone Mockup with smooth gentle straightening & zoom-in, with bottom fade on mobile */}
