@@ -52,7 +52,7 @@ export default function FeaturesPage() {
             FEATURE 1: SEE IT CLEARLY (Image LEFT, Content RIGHT) - NO LINE DIVIDERS, COMPACT
         ========================================================================= */}
         <section className="pt-2 pb-4 sm:pt-3 sm:pb-6 bg-[#FFFFFF]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Upright Phone Mockup */}
@@ -126,7 +126,7 @@ export default function FeaturesPage() {
             FEATURE 2: REAL-TIME TRACKING (Content LEFT, Image RIGHT) - NO DIVIDERS, COMPACT
         ========================================================================= */}
         <section className="pt-2 pb-4 sm:pt-3 sm:pb-6 bg-[#FFFFFF]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Copy & Mini Feature Cards */}
@@ -199,7 +199,7 @@ export default function FeaturesPage() {
             FEATURE 3: AUTOMATED REPORTS & EXPORTS (Image LEFT, Content RIGHT) - NO DIVIDERS, COMPACT
         ========================================================================= */}
         <section className="pt-2 pb-4 sm:pt-3 sm:pb-6 bg-[#FFFFFF]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Data & Analytics Illustration */}
@@ -272,7 +272,7 @@ export default function FeaturesPage() {
             FEATURE 4: OFFLINE & CAMPUS REALITY (Content LEFT, Image RIGHT) - NO DIVIDERS, COMPACT
         ========================================================================= */}
         <section className="pt-2 pb-6 sm:pt-3 sm:pb-8 bg-[#FFFFFF]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Copy & Mini Feature Cards */}

@@ -196,24 +196,24 @@ export default function PricingClient() {
       </section>
 
       {/* Pricing Cards Grid */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+      <section className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-4.5 lg:gap-8 items-stretch">
           {plans.map((plan) => {
             const Icon = plan.icon;
             return (
               <div
                 key={plan.id}
-                className={`rounded-3xl p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 relative ${
+                className={`rounded-3xl p-5 sm:p-6 md:p-5 lg:p-8 flex flex-col justify-between transition-all duration-300 relative ${
                   plan.highlight
                     ? "bg-white border-2 border-[#007AFF] shadow-xl shadow-[#007AFF]/10 sm:-translate-y-2"
                     : "bg-white border border-[#E5E5E7] shadow-lg shadow-black/[0.03] hover:shadow-xl"
                 }`}
               >
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6 md:space-y-4.5 lg:space-y-6">
                   {/* Top Tier Badge & Icon */}
                   <div className="flex items-center justify-between">
                     <div
-                      className={`w-11 h-11 rounded-2xl flex items-center justify-center shadow-xs ${
+                      className={`w-10 h-10 sm:w-11 sm:h-11 md:w-9 md:h-9 lg:w-11 lg:h-11 rounded-2xl flex items-center justify-center shadow-xs ${
                         plan.highlight
                           ? "bg-[#EFF6FF] text-[#007AFF] border border-[#BFDBFE]"
                           : "bg-[#F5F5F7] text-[#1D1D1F] border border-[#E5E5E7]"
@@ -222,7 +222,7 @@ export default function PricingClient() {
                       <Icon className="w-5 h-5" />
                     </div>
                     <span
-                      className={`text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full ${
+                      className={`text-[10px] md:text-[10px] lg:text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${
                         plan.highlight
                           ? "bg-[#007AFF] text-white shadow-xs"
                           : "bg-[#F5F5F7] text-[#6E6E73] border border-[#E5E5E7]"
@@ -234,10 +234,10 @@ export default function PricingClient() {
 
                   {/* Plan Name & Tagline */}
                   <div>
-                    <h2 className="text-2xl font-bold text-[#1D1D1F]">
+                    <h2 className="text-xl sm:text-2xl md:text-xl lg:text-2xl font-bold text-[#1D1D1F]">
                       {plan.name}
                     </h2>
-                    <p className="text-xs sm:text-sm text-[#6E6E73] mt-1.5 leading-relaxed">
+                    <p className="text-xs sm:text-sm md:text-xs lg:text-sm text-[#6E6E73] mt-1 sm:mt-1.5 leading-relaxed">
                       {plan.tagline}
                     </p>
                   </div>
@@ -245,7 +245,7 @@ export default function PricingClient() {
                   {/* Price Display */}
                   <div className="pt-2 pb-3 border-y border-[#F5F5F7]">
                     <div className="flex items-baseline gap-1.5">
-                      <span className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#1D1D1F]">
+                      <span className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-tight text-[#1D1D1F]">
                         {plan.price}
                       </span>
                       <span className="text-xs sm:text-sm font-medium text-[#6E6E73]">
@@ -255,16 +255,16 @@ export default function PricingClient() {
                   </div>
 
                   {/* Feature Checklist */}
-                  <div className="space-y-3 pt-1">
+                  <div className="space-y-2.5 sm:space-y-3 pt-1">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#1D1D1F] block">
                       Included Features:
                     </span>
                     {plan.features.map((feature, fIdx) => (
-                      <div key={fIdx} className="flex items-start gap-2.5">
+                      <div key={fIdx} className="flex items-start gap-2">
                         <div className="w-4 h-4 rounded-full bg-[#ECFDF5] text-[#10B981] flex items-center justify-center shrink-0 mt-0.5">
                           <Check className="w-3 h-3 stroke-[3]" />
                         </div>
-                        <span className="text-xs sm:text-sm text-[#4B5563] leading-relaxed">
+                        <span className="text-xs sm:text-sm md:text-[12px] lg:text-sm text-[#4B5563] leading-relaxed">
                           {feature}
                         </span>
                       </div>
@@ -273,10 +273,10 @@ export default function PricingClient() {
                 </div>
 
                 {/* CTA Button */}
-                <div className="pt-8">
+                <div className="pt-6 sm:pt-8">
                   <Link
                     href={plan.ctaHref}
-                    className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-full transition-all active:scale-98 ${plan.ctaStyle}`}
+                    className={`w-full inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold rounded-full transition-all active:scale-98 ${plan.ctaStyle}`}
                   >
                     <span>{plan.ctaText}</span>
                     <ArrowRight className="w-4 h-4" />
@@ -289,7 +289,7 @@ export default function PricingClient() {
       </section>
 
       {/* Feature Comparison Matrix Panel */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E5E5E7] shadow-lg shadow-black/[0.03] space-y-8">
           <div className="text-center space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#007AFF]">

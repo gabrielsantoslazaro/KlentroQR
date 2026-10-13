@@ -349,13 +349,13 @@ export default function GuideClient() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-4.5 lg:gap-6">
           {bestPractices.map((tip, idx) => {
             const Icon = tip.icon;
             return (
               <div
                 key={idx}
-                className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E5E5E7] shadow-xs flex flex-col justify-between space-y-4"
+                className="bg-white rounded-3xl p-5 sm:p-6 md:p-5 lg:p-7 border border-[#E5E5E7] shadow-xs flex flex-col justify-between space-y-4"
               >
                 <div className="space-y-3">
                   <div className="w-10 h-10 rounded-xl bg-[#EFF6FF] border border-[#BFDBFE] text-[#007AFF] flex items-center justify-center shadow-xs">

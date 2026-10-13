@@ -30,7 +30,7 @@ export default function VideoShowcaseSection() {
 
   return (
     <section id="demo-video" className="py-16 sm:py-24 bg-[#F5F5F7]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
         {/* Section Header */}
         <ScrollReveal delay={0}>
@@ -41,7 +41,7 @@ export default function VideoShowcaseSection() {
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#1D1D1F] leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-5xl font-extrabold tracking-tight text-[#1D1D1F] leading-tight">
               Watch how fast attendance check-in actually is.
             </h2>
 
@@ -53,7 +53,7 @@ export default function VideoShowcaseSection() {
 
         {/* Video Player Card */}
         <ScrollReveal delay={100}>
-          <div className="relative rounded-[32px] overflow-hidden bg-[#1D1D1F] border border-black/10 shadow-2xl group max-w-4xl mx-auto">
+          <div className="relative rounded-[32px] overflow-hidden bg-[#1D1D1F] border border-black/10 shadow-2xl group max-w-4xl lg:max-w-5xl mx-auto">
             {/* The Video Element */}
             <div className="relative aspect-video w-full bg-black flex items-center justify-center overflow-hidden">
               <video
