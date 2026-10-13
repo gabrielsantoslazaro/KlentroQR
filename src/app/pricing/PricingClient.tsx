@@ -274,17 +274,6 @@ export default function PricingClient() {
                       ))}
                     </div>
                   </div>
-
-                  {/* CTA Button */}
-                  <div className="pt-6 sm:pt-8">
-                    <Link
-                      href={plan.ctaHref}
-                      className={`w-full inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold rounded-full transition-all active:scale-98 ${plan.ctaStyle}`}
-                    >
-                      <span>{plan.ctaText}</span>
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
-                  </div>
                 </div>
               </ScrollReveal>
             );
