@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Zap, Sparkles, Building2, Check, ArrowRight } from "lucide-react";
+import { Zap, GraduationCap, Building2, Check, ArrowRight } from "lucide-react";
 
 export default function PricingSection() {
   const plans = [
@@ -31,7 +31,7 @@ export default function PricingSection() {
       period: "/ month or ₱999 lifetime",
       highlight: true,
       badge: "Most Popular",
-      icon: Sparkles,
+      icon: GraduationCap,
       features: [
         "Unlimited attendees & rosters",
         "Multi-scanner real-time sync (multiple doors)",
@@ -144,7 +144,7 @@ export default function PricingSection() {
                 {/* Features */}
                 <div className="space-y-3 pt-1">
                   <span className="text-xs font-bold uppercase tracking-wider text-[#1D1D1F] block">
-                    What's included:
+                    What&apos;s included:
                   </span>
                   {plan.features.map((feature, fIdx) => (
                     <div key={fIdx} className="flex items-start gap-2.5">

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { 
-  BookOpen, 
   UserPlus, 
   QrCode, 
   Camera, 
@@ -13,9 +12,7 @@ import {
   CheckCircle2, 
   ArrowRight,
   ShieldCheck,
-  CheckSquare,
   Square,
-  HelpCircle,
   Copy,
   Check,
   GraduationCap,

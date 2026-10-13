@@ -7,13 +7,10 @@ import {
   Trash2, 
   Camera, 
   FileSpreadsheet, 
-  HardDrive, 
   Mail, 
   ArrowRight, 
   CheckCircle2, 
-  AlertCircle,
-  FileText,
-  UserCheck
+  AlertCircle
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";

@@ -15,13 +15,17 @@ export default function ScrollReveal({
   delay = 0,
   direction = "up",
 }: ScrollRevealProps) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(() => {
+    if (typeof window !== "undefined" && !("IntersectionObserver" in window)) {
+      return true;
+    }
+    return false;
+  });
   const domRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // If IntersectionObserver is not supported, show immediately
+    // If IntersectionObserver is not supported, already visible
     if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
-      setIsVisible(true);
       return;
     }
 

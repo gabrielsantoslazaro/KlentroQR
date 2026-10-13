@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowDown, Play } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 
 export default function HeroSection() {
   return (

@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  BadgeCheck, 
-  Scan, 
-  FileSpreadsheet, 
-  ArrowRight, 
-  CheckCircle2
-} from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";

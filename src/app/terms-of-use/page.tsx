@@ -6,13 +6,10 @@ import {
   ShieldAlert, 
   CheckCircle2, 
   Database, 
-  AlertTriangle, 
   Gavel, 
-  HelpCircle, 
   ArrowRight,
   ShieldCheck,
   Building2,
-  Lock,
   Clock
 } from "lucide-react";
 import Navbar from "@/components/Navbar";

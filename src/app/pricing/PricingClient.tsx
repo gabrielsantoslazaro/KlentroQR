@@ -5,13 +5,10 @@ import Link from "next/link";
 import { 
   Check, 
   Zap, 
-  Sparkles, 
   Building2, 
   ArrowRight, 
-  ShieldCheck, 
   HelpCircle,
   X,
-  CreditCard,
   GraduationCap
 } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -50,7 +47,7 @@ export default function PricingClient() {
       period: billingCycle === "monthly" ? "/ month" : "/ mo (billed annually)",
       highlight: true,
       badge: "Most Popular",
-      icon: Sparkles,
+      icon: GraduationCap,
       features: [
         "Unlimited attendees & rosters",
         "Multi-scanner real-time sync (multiple doors)",
