@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Terms of Use | Klentro Universal QR Attendance System",
@@ -105,76 +106,80 @@ export default function TermsOfUsePage() {
       <main className="flex-1">
         {/* Header Hero Section */}
         <section className="pt-16 pb-12 sm:pt-20 sm:pb-16 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
-          <div>
-            <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
-              LEGAL & OPERATIONAL GUIDELINES
-            </span>
-          </div>
+          <ScrollReveal delay={0}>
+            <div>
+              <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
+                LEGAL & OPERATIONAL GUIDELINES
+              </span>
+            </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight text-[#1D1D1F] leading-[1.08]">
-            Terms of Use
-          </h1>
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight text-[#1D1D1F] leading-[1.08] mt-3">
+              Terms of Use
+            </h1>
 
-          <p className="text-base sm:text-lg lg:text-xl font-normal text-[#6E6E73] leading-relaxed max-w-2xl mx-auto">
-            Please read these terms carefully before deploying Klentro for your academic classroom, campus event, or corporate workplace.
-          </p>
+            <p className="text-base sm:text-lg lg:text-xl font-normal text-[#6E6E73] leading-relaxed max-w-2xl mx-auto mt-3">
+              Please read these terms carefully before deploying Klentro for your academic classroom, campus event, or corporate workplace.
+            </p>
 
-          <div className="pt-2 flex items-center justify-center gap-2 text-xs font-medium text-[#6E6E73]">
-            <span>Last Updated: October 2026</span>
-            <span>•</span>
-            <span>Republic of the Philippines</span>
-          </div>
+            <div className="pt-3 flex items-center justify-center gap-2 text-xs font-medium text-[#6E6E73]">
+              <span>Last Updated: October 2026</span>
+              <span>•</span>
+              <span>Republic of the Philippines</span>
+            </div>
+          </ScrollReveal>
         </section>
 
         {/* Quick Highlights Summary Card */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E5E5E7] shadow-lg shadow-black/[0.03] space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-[#EFF6FF] border border-[#BFDBFE] text-[#007AFF] flex items-center justify-center shrink-0">
-                <FileText className="w-5 h-5 text-[#007AFF]" />
+          <ScrollReveal delay={0}>
+            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#E5E5E7] shadow-lg shadow-black/[0.03] space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-[#EFF6FF] border border-[#BFDBFE] text-[#007AFF] flex items-center justify-center shrink-0">
+                  <FileText className="w-5 h-5 text-[#007AFF]" />
+                </div>
+                <div>
+                  <h2 className="text-lg font-bold text-[#1D1D1F]">
+                    Summary for Instructors & Attendees
+                  </h2>
+                  <p className="text-xs text-[#6E6E73]">
+                    A plain-language snapshot of our operational standards:
+                  </p>
+                </div>
               </div>
-              <div>
-                <h2 className="text-lg font-bold text-[#1D1D1F]">
-                  Summary for Instructors & Attendees
-                </h2>
-                <p className="text-xs text-[#6E6E73]">
-                  A plain-language snapshot of our operational standards:
-                </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                <div className="p-4 rounded-2xl bg-[#F9F9FB] border border-[#E5E5E7] space-y-1.5">
+                  <div className="flex items-center gap-2 text-xs font-bold text-[#1D1D1F]">
+                    <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
+                    <span>Your Data Belongs to You</span>
+                  </div>
+                  <p className="text-xs text-[#6E6E73] leading-relaxed">
+                    We never sell, rent, or commercialize student or employee attendance rosters.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-[#F9F9FB] border border-[#E5E5E7] space-y-1.5">
+                  <div className="flex items-center gap-2 text-xs font-bold text-[#1D1D1F]">
+                    <ShieldCheck className="w-4 h-4 text-[#007AFF]" />
+                    <span>Zero Proxy Attendance</span>
+                  </div>
+                  <p className="text-xs text-[#6E6E73] leading-relaxed">
+                    Sharing or screenshotting passes to fake check-ins is strictly prohibited by our system rules.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-[#F9F9FB] border border-[#E5E5E7] space-y-1.5">
+                  <div className="flex items-center gap-2 text-xs font-bold text-[#1D1D1F]">
+                    <Building2 className="w-4 h-4 text-[#8B5CF6]" />
+                    <span>Universal Deployment</span>
+                  </div>
+                  <p className="text-xs text-[#6E6E73] leading-relaxed">
+                    Designed for classrooms, corporate workplaces, conferences, and seminars across the Philippines.
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-              <div className="p-4 rounded-2xl bg-[#F9F9FB] border border-[#E5E5E7] space-y-1.5">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#1D1D1F]">
-                  <CheckCircle2 className="w-4 h-4 text-[#10B981]" />
-                  <span>Your Data Belongs to You</span>
-                </div>
-                <p className="text-xs text-[#6E6E73] leading-relaxed">
-                  We never sell, rent, or commercialize student or employee attendance rosters.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-2xl bg-[#F9F9FB] border border-[#E5E5E7] space-y-1.5">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#1D1D1F]">
-                  <ShieldCheck className="w-4 h-4 text-[#007AFF]" />
-                  <span>Zero Proxy Attendance</span>
-                </div>
-                <p className="text-xs text-[#6E6E73] leading-relaxed">
-                  Sharing or screenshotting passes to fake check-ins is strictly prohibited by our system rules.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-2xl bg-[#F9F9FB] border border-[#E5E5E7] space-y-1.5">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#1D1D1F]">
-                  <Building2 className="w-4 h-4 text-[#8B5CF6]" />
-                  <span>Universal Deployment</span>
-                </div>
-                <p className="text-xs text-[#6E6E73] leading-relaxed">
-                  Designed for classrooms, corporate workplaces, conferences, and seminars across the Philippines.
-                </p>
-              </div>
-            </div>
-          </div>
+          </ScrollReveal>
         </section>
 
         {/* Numbered Legal Terms Panels */}
@@ -182,57 +187,60 @@ export default function TermsOfUsePage() {
           {SECTIONS.map((section) => {
             const Icon = section.icon;
             return (
-              <div
-                key={section.id}
-                id={section.id}
-                className="bg-white rounded-3xl p-7 sm:p-9 border border-[#E5E5E7] shadow-lg shadow-black/[0.03] space-y-5 transition-all hover:shadow-xl"
-              >
-                <div className="flex items-center gap-3.5 pb-4 border-b border-[#F5F5F7]">
-                  <span className="w-10 h-10 rounded-2xl bg-[#007AFF] text-white font-extrabold text-sm flex items-center justify-center shadow-xs shrink-0">
-                    {section.number}
-                  </span>
-                  <div className="flex-1">
-                    <h2 className="text-xl sm:text-2xl font-bold text-[#1D1D1F]">
-                      {section.title}
-                    </h2>
+              <ScrollReveal key={section.id} delay={0}>
+                <div
+                  id={section.id}
+                  className="bg-white rounded-3xl p-7 sm:p-9 border border-[#E5E5E7] shadow-lg shadow-black/[0.03] space-y-5 transition-all hover:shadow-xl"
+                >
+                  <div className="flex items-center gap-3.5 pb-4 border-b border-[#F5F5F7]">
+                    <span className="w-10 h-10 rounded-2xl bg-[#007AFF] text-white font-extrabold text-sm flex items-center justify-center shadow-xs shrink-0">
+                      {section.number}
+                    </span>
+                    <div className="flex-1">
+                      <h2 className="text-xl sm:text-2xl font-bold text-[#1D1D1F]">
+                        {section.title}
+                      </h2>
+                    </div>
+                    <div className="w-10 h-10 rounded-xl bg-[#F5F5F7] border border-[#E5E5E7] text-[#007AFF] flex items-center justify-center shrink-0">
+                      <Icon className="w-5 h-5 text-[#007AFF]" />
+                    </div>
                   </div>
-                  <div className="w-10 h-10 rounded-xl bg-[#F5F5F7] border border-[#E5E5E7] text-[#007AFF] flex items-center justify-center shrink-0">
-                    <Icon className="w-5 h-5 text-[#007AFF]" />
-                  </div>
-                </div>
 
-                <div className="space-y-3">
-                  {section.content.map((paragraph, pIdx) => (
-                    <p
-                      key={pIdx}
-                      className="text-xs sm:text-sm text-[#4B5563] leading-relaxed"
-                    >
-                      {paragraph}
-                    </p>
-                  ))}
+                  <div className="space-y-3">
+                    {section.content.map((paragraph, pIdx) => (
+                      <p
+                        key={pIdx}
+                        className="text-xs sm:text-sm text-[#4B5563] leading-relaxed"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </ScrollReveal>
             );
           })}
 
           {/* Footer Callout to Privacy Policy */}
-          <div className="bg-white rounded-3xl p-8 border border-[#E5E5E7] shadow-sm text-center space-y-4">
-            <h3 className="text-lg font-bold text-[#1D1D1F]">
-              Looking for our Data Privacy Policy & RA 10173 details?
-            </h3>
-            <p className="text-xs sm:text-sm text-[#6E6E73] max-w-xl mx-auto">
-              Learn how we protect student and employee records, our zero third-party tracking pledge, and how to request complete data deletion.
-            </p>
-            <div className="pt-2">
-              <Link
-                href="/privacy-policy"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#1D1D1F] text-white hover:bg-black font-semibold text-sm transition-all"
-              >
-                <span>Read Full Privacy Policy</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+          <ScrollReveal delay={0}>
+            <div className="bg-white rounded-3xl p-8 border border-[#E5E5E7] shadow-sm text-center space-y-4">
+              <h3 className="text-lg font-bold text-[#1D1D1F]">
+                Looking for our Data Privacy Policy & RA 10173 details?
+              </h3>
+              <p className="text-xs sm:text-sm text-[#6E6E73] max-w-xl mx-auto">
+                Learn how we protect student and employee records, our zero third-party tracking pledge, and how to request complete data deletion.
+              </p>
+              <div className="pt-2">
+                <Link
+                  href="/privacy-policy"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#1D1D1F] text-white hover:bg-black font-semibold text-sm transition-all"
+                >
+                  <span>Read Full Privacy Policy</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         </section>
       </main>
 

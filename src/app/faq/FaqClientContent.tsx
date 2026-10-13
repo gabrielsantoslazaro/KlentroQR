@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown, ShieldCheck, ArrowRight, ArrowLeft } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface FaqItem {
   question: string;
@@ -56,112 +57,119 @@ export default function FaqClientContent() {
   return (
     <section className="pb-24 sm:pb-32 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Privacy Highlight Banner */}
-      <div className="mb-10 p-6 rounded-3xl bg-white border border-[#E5E5E7] flex flex-col sm:flex-row items-start sm:items-center gap-5 shadow-xs">
-        <div className="w-12 h-12 rounded-2xl bg-[#ECFDF5] text-[#10B981] flex items-center justify-center shrink-0">
-          <ShieldCheck className="w-6 h-6" />
+      <ScrollReveal delay={0}>
+        <div className="mb-10 p-6 rounded-3xl bg-white border border-[#E5E5E7] flex flex-col sm:flex-row items-start sm:items-center gap-5 shadow-xs">
+          <div className="w-12 h-12 rounded-2xl bg-[#ECFDF5] text-[#10B981] flex items-center justify-center shrink-0">
+            <ShieldCheck className="w-6 h-6" />
+          </div>
+          <div className="space-y-1">
+            <h3 className="text-base font-bold text-[#1D1D1F]">
+              Data Privacy Guarantee: Compliant with RA 10173
+            </h3>
+            <p className="text-sm text-[#6E6E73] leading-relaxed">
+              All attendance ledgers are encrypted and restricted strictly to authorized event directors, HR administrators, or designated supervisors.
+            </p>
+          </div>
         </div>
-        <div className="space-y-1">
-          <h3 className="text-base font-bold text-[#1D1D1F]">
-            Data Privacy Guarantee: Compliant with RA 10173
-          </h3>
-          <p className="text-sm text-[#6E6E73] leading-relaxed">
-            All attendance ledgers are encrypted and restricted strictly to authorized event directors, HR administrators, or designated supervisors.
-          </p>
-        </div>
-      </div>
+      </ScrollReveal>
 
       {/* Category Filter Pills */}
-      <div className="flex items-center gap-2 mb-8 overflow-x-auto pb-2">
-        {(["All", "Privacy", "Technical", "Deployment"] as const).map((category) => (
-          <button
-            key={category}
-            type="button"
-            onClick={() => setActiveTab(category)}
-            className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
-              activeTab === category
-                ? "bg-[#1D1D1F] text-white shadow-xs"
-                : "bg-white text-[#6E6E73] hover:text-[#1D1D1F] border border-[#E5E5E7]"
-            }`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
+      <ScrollReveal delay={0}>
+        <div className="flex items-center gap-2 mb-8 overflow-x-auto pb-2">
+          {(["All", "Privacy", "Technical", "Deployment"] as const).map((category) => (
+            <button
+              key={category}
+              type="button"
+              onClick={() => setActiveTab(category)}
+              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
+                activeTab === category
+                  ? "bg-[#1D1D1F] text-white shadow-xs"
+                  : "bg-white text-[#6E6E73] hover:text-[#1D1D1F] border border-[#E5E5E7]"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+      </ScrollReveal>
 
       {/* Accordion List */}
       <div className="space-y-3.5">
         {filteredFaqs.map((faq, idx) => {
           const isOpen = openIndex === idx;
           return (
-            <div
-              key={idx}
-              className="bg-white rounded-2xl border border-[#E5E5E7] overflow-hidden transition-all shadow-xs"
-            >
-              <button
-                type="button"
-                onClick={() => toggleAccordion(idx)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 hover:bg-[#FAFAFA] transition-colors cursor-pointer"
-                aria-expanded={isOpen}
+            <ScrollReveal key={idx} delay={idx * 50}>
+              <div
+                className="bg-white rounded-2xl border border-[#E5E5E7] overflow-hidden transition-all shadow-xs"
               >
-                <div className="space-y-1">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#007AFF]">
-                    {faq.category}
-                  </span>
-                  <span className="block text-base sm:text-lg font-bold text-[#1D1D1F]">
-                    {faq.question}
-                  </span>
-                </div>
-                <div
-                  className={`w-8 h-8 rounded-full bg-[#F5F5F7] flex items-center justify-center text-[#1D1D1F] transition-transform duration-200 shrink-0 ${
-                    isOpen ? "rotate-180 bg-[#EBF4FF] text-[#0066CC]" : ""
-                  }`}
+                <button
+                  type="button"
+                  onClick={() => toggleAccordion(idx)}
+                  className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 hover:bg-[#FAFAFA] transition-colors cursor-pointer"
+                  aria-expanded={isOpen}
                 >
-                  <ChevronDown className="w-4 h-4" />
-                </div>
-              </button>
+                  <div className="space-y-1">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#007AFF]">
+                      {faq.category}
+                    </span>
+                    <span className="block text-base sm:text-lg font-bold text-[#1D1D1F]">
+                      {faq.question}
+                    </span>
+                  </div>
+                  <div
+                    className={`w-8 h-8 rounded-full bg-[#F5F5F7] flex items-center justify-center text-[#1D1D1F] transition-transform duration-200 shrink-0 ${
+                      isOpen ? "rotate-180 bg-[#EBF4FF] text-[#0066CC]" : ""
+                    }`}
+                  >
+                    <ChevronDown className="w-4 h-4" />
+                  </div>
+                </button>
 
-              {isOpen && (
-                <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#6E6E73] leading-relaxed border-t border-[#F5F5F7]">
-                  {faq.answer}
-                </div>
-              )}
-            </div>
+                {isOpen && (
+                  <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#6E6E73] leading-relaxed border-t border-[#F5F5F7]">
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            </ScrollReveal>
           );
         })}
       </div>
 
       {/* Bottom CTA on FAQ page */}
-      <div className="mt-16 pt-12 border-t border-[#E5E5E7] text-center space-y-4">
-        <h3 className="text-xl font-bold text-[#1D1D1F]">
-          Have more questions about deployment for your team or organization?
-        </h3>
-        <p className="text-sm text-[#6E6E73] max-w-md mx-auto">
-          Explore the live features showcase or walk through the 3-step check-in process.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-          <Link
-            href="/features"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#1D1D1F] hover:bg-black rounded-full shadow-sm hover:shadow transition-all"
-          >
-            <span>Explore Features</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-          <Link
-            href="/how-it-works"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-[#1D1D1F] bg-white hover:bg-[#F5F5F7] border border-[#E5E5E7] rounded-full transition-colors"
-          >
-            <span>See How It Works</span>
-            <ArrowRight className="w-4 h-4 text-[#6E6E73]" />
-          </Link>
-          <Link
-            href="/"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-[#6E6E73] hover:text-[#1D1D1F] transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Back to Home</span>
-          </Link>
+      <ScrollReveal delay={0}>
+        <div className="mt-16 pt-12 border-t border-[#E5E5E7] text-center space-y-4">
+          <h3 className="text-xl font-bold text-[#1D1D1F]">
+            Have more questions about deployment for your team or organization?
+          </h3>
+          <p className="text-sm text-[#6E6E73] max-w-md mx-auto">
+            Explore the live features showcase or walk through the 3-step check-in process.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <Link
+              href="/features"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#1D1D1F] hover:bg-black rounded-full shadow-sm hover:shadow transition-all"
+            >
+              <span>Explore Features</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/how-it-works"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-[#1D1D1F] bg-white hover:bg-[#F5F5F7] border border-[#E5E5E7] rounded-full transition-colors"
+            >
+              <span>See How It Works</span>
+              <ArrowRight className="w-4 h-4 text-[#6E6E73]" />
+            </Link>
+            <Link
+              href="/"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-[#6E6E73] hover:text-[#1D1D1F] transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span>Back to Home</span>
+            </Link>
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

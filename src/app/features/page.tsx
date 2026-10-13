@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Features | Klentro QR Attendance System",
@@ -30,22 +31,24 @@ export default function FeaturesPage() {
       <main className="flex-1">
         {/* Top Header Section (Tarsi Style - Compact & Clean) */}
         <section className="pt-6 pb-2 sm:pt-8 sm:pb-3 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
-          {/* Section Kicker */}
-          <div>
-            <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
-              FEATURES
-            </span>
-          </div>
+          <ScrollReveal delay={0}>
+            {/* Section Kicker */}
+            <div>
+              <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
+                FEATURES
+              </span>
+            </div>
 
-          {/* Main Section Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight text-[#1D1D1F] leading-[1.08]">
-            Everything you need to run your attendance.
-          </h1>
+            {/* Main Section Headline */}
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-extrabold tracking-tight text-[#1D1D1F] leading-[1.08] mt-3">
+              Everything you need to run your attendance.
+            </h1>
 
-          {/* Subtitle */}
-          <p className="text-base sm:text-lg lg:text-xl font-normal text-[#6E6E73] leading-relaxed max-w-2xl mx-auto">
-            Klentro started as a way to log attendance in seconds. It grew into a full classroom and campus attendance ecosystem, covering dynamic QR passes, real-time rosters, automated exports, and student records, without ever slowing you down.
-          </p>
+            {/* Subtitle */}
+            <p className="text-base sm:text-lg lg:text-xl font-normal text-[#6E6E73] leading-relaxed max-w-2xl mx-auto mt-3">
+              Klentro started as a way to log attendance in seconds. It grew into a full classroom and campus attendance ecosystem, covering dynamic QR passes, real-time rosters, automated exports, and student records, without ever slowing you down.
+            </p>
+          </ScrollReveal>
         </section>
 
         {/* =========================================================================
@@ -56,7 +59,7 @@ export default function FeaturesPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Upright Phone Mockup */}
-              <div className="lg:col-span-5 flex items-center justify-center">
+              <ScrollReveal delay={0} className="lg:col-span-5 flex items-center justify-center">
                 <div className="relative w-full max-w-[250px] sm:max-w-[280px] aspect-[373/668] flex items-center justify-center">
                   <Image
                     src="/images/KlentroQR-class-attendance.png"
@@ -68,10 +71,10 @@ export default function FeaturesPage() {
                     sizes="(max-width: 768px) 100vw, 360px"
                   />
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Right Column: Copy & Mini Feature Cards */}
-              <div className="lg:col-span-7 space-y-5 text-left">
+              <ScrollReveal delay={100} className="lg:col-span-7 space-y-5 text-left">
                 <div>
                   <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
                     SEE IT CLEARLY
@@ -116,7 +119,7 @@ export default function FeaturesPage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
 
             </div>
           </div>
@@ -130,7 +133,7 @@ export default function FeaturesPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Copy & Mini Feature Cards */}
-              <div className="lg:col-span-7 space-y-5 text-left order-2 lg:order-1">
+              <ScrollReveal delay={100} className="lg:col-span-7 space-y-5 text-left order-2 lg:order-1">
                 <div>
                   <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
                     REAL-TIME ROSTERS
@@ -175,10 +178,10 @@ export default function FeaturesPage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Right Column: Upright/Angled Mockup */}
-              <div className="lg:col-span-5 flex items-center justify-center order-1 lg:order-2">
+              <ScrollReveal delay={0} className="lg:col-span-5 flex items-center justify-center order-1 lg:order-2">
                 <div className="relative w-full max-w-[250px] sm:max-w-[280px] aspect-[373/668] flex items-center justify-center">
                   <Image
                     src="/images/KlentroQR-present.png"
@@ -189,7 +192,7 @@ export default function FeaturesPage() {
                     sizes="(max-width: 768px) 100vw, 360px"
                   />
                 </div>
-              </div>
+              </ScrollReveal>
 
             </div>
           </div>
@@ -203,7 +206,7 @@ export default function FeaturesPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Data & Analytics Illustration */}
-              <div className="lg:col-span-5 flex items-center justify-center">
+              <ScrollReveal delay={0} className="lg:col-span-5 flex items-center justify-center">
                 <div className="relative w-full max-w-[250px] sm:max-w-[280px] aspect-[373/668] flex items-center justify-center">
                   <Image
                     src="/images/KlentroQR-export.png"
@@ -214,10 +217,10 @@ export default function FeaturesPage() {
                     sizes="(max-width: 768px) 100vw, 360px"
                   />
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Right Column: Copy & Mini Feature Cards */}
-              <div className="lg:col-span-7 space-y-5 text-left">
+              <ScrollReveal delay={100} className="lg:col-span-7 space-y-5 text-left">
                 <div>
                   <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
                     AUTOMATED REPORTS
@@ -262,7 +265,7 @@ export default function FeaturesPage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
 
             </div>
           </div>
@@ -276,7 +279,7 @@ export default function FeaturesPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
               {/* Left Column: Copy & Mini Feature Cards */}
-              <div className="lg:col-span-7 space-y-5 text-left order-2 lg:order-1">
+              <ScrollReveal delay={100} className="lg:col-span-7 space-y-5 text-left order-2 lg:order-1">
                 <div>
                   <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
                     OFFLINE & RELIABLE
@@ -321,10 +324,10 @@ export default function FeaturesPage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Right Column: Checking Illustration Mockup */}
-              <div className="lg:col-span-5 flex items-center justify-center order-1 lg:order-2">
+              <ScrollReveal delay={0} className="lg:col-span-5 flex items-center justify-center order-1 lg:order-2">
                 <div className="relative w-full max-w-[250px] sm:max-w-[280px] aspect-[373/668] flex items-center justify-center">
                   <Image
                     src="/images/KlentroQR-offline.png"
@@ -335,7 +338,7 @@ export default function FeaturesPage() {
                     sizes="(max-width: 768px) 100vw, 360px"
                   />
                 </div>
-              </div>
+              </ScrollReveal>
 
             </div>
           </div>
@@ -345,7 +348,7 @@ export default function FeaturesPage() {
             BOTTOM NAVIGATION CTA - CLEAN, NO LINE DIVIDER
         ========================================================================= */}
         <section className="pt-12 pb-20 bg-[#FFFFFF] text-center">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+          <ScrollReveal delay={0} className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1D1D1F]">
               Ready to modernize your classroom attendance?
             </h2>
@@ -368,7 +371,7 @@ export default function FeaturesPage() {
                 <span>Return to Home</span>
               </Link>
             </div>
-          </div>
+          </ScrollReveal>
         </section>
 
       </main>

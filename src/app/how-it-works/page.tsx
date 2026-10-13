@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "How It Works | Klentro QR Attendance System",
@@ -70,19 +71,21 @@ export default function HowItWorksPage() {
       <main className="flex-1">
         {/* Header Section */}
         <section className="pt-8 pb-4 sm:pt-10 sm:pb-6 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <div>
-            <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
-              WORKFLOW & ARCHITECTURE
-            </span>
-          </div>
+          <ScrollReveal delay={0}>
+            <div>
+              <span className="text-xs sm:text-[13px] font-extrabold uppercase tracking-widest text-[#007AFF]">
+                WORKFLOW & ARCHITECTURE
+              </span>
+            </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-extrabold tracking-tight text-[#1D1D1F] leading-[1.06]">
-            3 simple steps from the front door to Excel export.
-          </h1>
+            <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-extrabold tracking-tight text-[#1D1D1F] leading-[1.06] mt-3">
+              3 simple steps from the front door to Excel export.
+            </h1>
 
-          <p className="text-base sm:text-lg lg:text-xl font-normal text-[#6E6E73] leading-relaxed max-w-2xl mx-auto">
-            Engineered to eliminate paper sign-in sheets, doorway bottlenecks, and proxy check-ins across offices, conference halls, seminars, and classrooms.
-          </p>
+            <p className="text-base sm:text-lg lg:text-xl font-normal text-[#6E6E73] leading-relaxed max-w-2xl mx-auto mt-3">
+              Engineered to eliminate paper sign-in sheets, doorway bottlenecks, and proxy check-ins across offices, conference halls, seminars, and classrooms.
+            </p>
+          </ScrollReveal>
         </section>
 
         {/* Seamless Steps Showcase without panel divider lines */}
@@ -98,7 +101,8 @@ export default function HowItWorksPage() {
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
                     
                     {/* Visual Mockup */}
-                    <div
+                    <ScrollReveal
+                      delay={0}
                       className={`lg:col-span-5 flex items-center justify-center ${
                         isEven ? "order-1 lg:order-2" : "order-1 lg:order-1"
                       }`}
@@ -129,10 +133,11 @@ export default function HowItWorksPage() {
                           </div>
                         )}
                       </div>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Step Information & Highlights */}
-                    <div
+                    <ScrollReveal
+                      delay={120}
                       className={`lg:col-span-7 space-y-5 text-left ${
                         isEven ? "order-2 lg:order-1" : "order-2 lg:order-2"
                       }`}
@@ -167,7 +172,7 @@ export default function HowItWorksPage() {
                           </div>
                         ))}
                       </div>
-                    </div>
+                    </ScrollReveal>
 
                   </div>
                 </div>
@@ -178,7 +183,7 @@ export default function HowItWorksPage() {
 
         {/* Bottom CTA without divider line */}
         <section className="py-16 sm:py-20 bg-[#FFFFFF] text-center">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <ScrollReveal delay={0} className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1D1D1F]">
               Ready to explore all system features?
             </h2>
@@ -201,7 +206,7 @@ export default function HowItWorksPage() {
                 <ArrowRight className="w-4 h-4 text-[#6E6E73]" />
               </Link>
             </div>
-          </div>
+          </ScrollReveal>
         </section>
       </main>
 
